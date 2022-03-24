@@ -92,4 +92,15 @@ class Calc:
 Calc.plus(10,20)
 Calc.multi(10,20)
 
+## 클래스 메소드 
+class Car:
+    count = 0
+    def __init__(self):
+        Car.count += 1
+    @classmethod
+    def maked_car_count(cls):
+        print('{} cars are maunufactured'.format(cls.count))
+c1 = Car()
+c2 = Car()
+Car.maked_car_count()
 
